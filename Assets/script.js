@@ -43,7 +43,7 @@ function GetNameFromButtonClicked(event)
 
 function GetLocationInformation(cityName)
 {
-    let cityInfoApiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=1&appid=" + weatherAPIKey;
+    let cityInfoApiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=1&appid=" + weatherAPIKey;
 
     fetch(cityInfoApiUrl).then(function (response) 
     {
@@ -73,7 +73,7 @@ function GetWeatherInformation(cityData, cityName)
                 console.log(data);
 
                 weatherTodayHeaderElement.text(cityName + " - " + currentMoment.format("dddd") + " - " + currentMoment.format("DD/MM/YY"));
-                weatherTodayIconElement.attr("src", "http://openweathermap.org/img/wn/" + data.current.weather[0].icon + "@2x.png");
+                weatherTodayIconElement.attr("src", "https://openweathermap.org/img/wn/" + data.current.weather[0].icon + "@2x.png");
                 weatherTodayTemperatureElement.text("Temperature: " + Math.round(data.current.temp) + celcius);
                 weatherTodayWindElement.text("Wind Speed: " + data.current.wind_speed + " km/h");
                 weatherTodayHumidityElement.text("Humidity: " + data.current.humidity + "%");
