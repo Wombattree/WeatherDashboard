@@ -155,7 +155,7 @@ function AddFiveDayForecastElement(weatherData, i)
 
     let newForecastWeekday = $("<p class='forecastWeekDay'>" + day.format("dddd") + "</p>");
     let newForecastDate = $("<p class='forecastDate'>" + day.format("DD/MM/YY") + "</p>");
-    let newForecastIcon = $("<img id='weatherTodayIcon' src='http://openweathermap.org/img/wn/" + weatherData.weather[0].icon + "@2x.png' alt='weatherIcon' width='50' height='50'>");
+    let newForecastIcon = $("<img id='weatherTodayIcon' src='https://openweathermap.org/img/wn/" + weatherData.weather[0].icon + "@2x.png' alt='weatherIcon' width='50' height='50'>");
     let newForecastTemperature = $("<p class='forecastText'>Temp: " + Math.round(weatherData.temp.day) + celcius + "</p>");
     let newForecastWind = $("<p class='forecastText'>Wind: " + weatherData.wind_speed + " km/h</p>");
     let newForecastHumidity = $("<p class='forecastText'>Humidity: " + weatherData.humidity + "%</p>");
