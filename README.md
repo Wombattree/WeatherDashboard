@@ -10,4 +10,4 @@ A coding challenge to create a weather dashboard, showing a five day forecast as
 # Where Can I See It?
 [Click here for to see the website live](https://wombattree.github.io/WeatherDashboard/)
 
-![Preview Image](readMeImage.png?raw=true "Preview Image")
+![Preview Image](./Assets/readMeImage.png?raw=true "Preview Image")
