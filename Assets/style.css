@@ -1,0 +1,157 @@
+:root
+{
+    --bodyColour: rgb(32, 32, 35);
+    --blueColour: rgb(15, 59, 74);
+    --lightBlueColour: rgb(22, 89, 112);
+    --veryLightBlueColour: rgb(31, 123, 154);
+
+    --textColour: #dddddd;
+    --fadedTextColour: grey;
+
+    --borderRadius: 5px;
+}
+
+body
+{
+    background-color: var(--bodyColour);
+    color: var(--textColour);
+}
+
+h1
+{
+    text-align: center;
+    background-color: var(--blueColour);
+    padding: 1% 0% 1% 0%;
+    margin-bottom: 3%;
+}
+
+#searchContainer
+{
+    padding: 0% 0% 0% 10%;
+}
+
+#searchBox, #searchButton, #searchLineBreak, .previousSearchButton
+{
+    width: 80%;
+    border-radius: var(--borderRadius);
+    padding: 1%;
+    margin: 2% 0% 2% 0%;
+}
+
+#searchBox
+{
+    border: none;
+}
+
+#searchButton
+{
+    background-color: var(--blueColour);
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#searchLineBreak
+{
+    background-color: var(--blueColour);
+    height: 3px;
+    margin: 5% 0% 5% 0%;
+}
+
+#previousSearches
+{
+    padding-left: 0px;
+    list-style: none;
+}
+
+.previousSearchButton
+{
+    background-color: var(--blueColour);
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#weatherTodayContainer
+{
+    padding: 2%;
+    background-color: var(--blueColour);
+    margin: 1% 1% 10% 1%;
+    border-radius: var(--borderRadius);
+}
+
+#weatherDisplay
+{
+    padding-right: 5%;
+}
+
+#weatherTodayHeader, #weatherTodayUV, #weatherTodayUVDisplay, .forecastUVText, .forecastUVDisplay
+{
+    display: inline-block;
+}
+
+#weatherTodayUVDisplay
+{
+    padding: 0.3% 1% 0.3% 1%;
+    border-radius: var(--borderRadius);
+}
+
+.forecastCard
+{
+    background-color: var(--blueColour);
+    border-radius: var(--borderRadius);
+    padding: 1%;
+    margin: 1% 1% 1% 1%;
+}
+
+.forecastWeekDay
+{
+    font-weight: bolder;
+}
+
+.forecastDate
+{
+    font-weight: bold;
+}
+
+.forecastUVDisplay
+{
+    margin-left: 2%;
+    padding: 2% 5% 2% 5%;
+    border-radius: var(--borderRadius);
+}
+
+.uvLow
+{
+    background-color: rgb(80, 123, 0);
+}
+
+.uvModerate
+{
+    background-color: rgb(135, 131, 0);
+}
+
+.uvHigh
+{
+    background-color: rgb(136, 88, 0);
+}
+
+.uvVeryHigh
+{
+    background-color: rgb(124, 0, 0);
+}
+
+.uvExtreme
+{
+    background-color: rgb(134, 0, 111);
+}
+
+.show
+{
+    display: inline;
+}
+
+.hide
+{
+    display: none;
+}
